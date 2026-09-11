@@ -11,6 +11,7 @@ import Privacy from './pages/Privacy';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
+import TokenLedger from './components/token/TokenLedger';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/token-ledger" element={<TokenLedger />} />
             <Route path = '*' element={<NotFound/>} />
           </Routes>
         </main>

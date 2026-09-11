@@ -1,0 +1,429 @@
+/**
+ * Token Ledger Component Styles
+ *
+ * Modern, responsive styling for the token management interface.
+ * Includes styles for forms, tables, alerts, and responsive layouts.
+ */
+
+.token-ledger-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.token-header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: slideDown 0.6s ease-out;
+}
+
+.token-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 0;
+  font-weight: 700;
+}
+
+.token-header p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin: 10px 0 0 0;
+}
+
+/* Alerts */
+.alert {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  animation: slideDown 0.3s ease-out;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Contract Info Section */
+.contract-info-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contract-info-section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.info-item .label {
+  display: block;
+  font-weight: 600;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.info-item .value {
+  display: block;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.info-item .value.active {
+  color: #27ae60;
+}
+
+.info-item .value.paused {
+  color: #e74c3c;
+}
+
+/* Sections */
+.section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 10px;
+}
+
+.transfer-section h2 {
+  border-bottom-color: #9b59b6;
+}
+
+.mint-section h2 {
+  border-bottom-color: #3498db;
+}
+
+.burn-section h2 {
+  border-bottom-color: #e67e22;
+}
+
+.transactions-section h2 {
+  border-bottom-color: #16a085;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+}
+
+.form-control:hover {
+  border-color: #bdc3c7;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #2980b9;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.btn-success {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+  background-color: #229954;
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+.btn-info {
+  background-color: #2980b9;
+  color: white;
+}
+
+.btn-info:hover:not(:disabled) {
+  background-color: #1f618d;
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.4);
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background-color: #c0392b;
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #7f8c8d;
+  box-shadow: 0 4px 12px rgba(149, 165, 166, 0.4);
+}
+
+/* Balance Result */
+.balance-result {
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 4px solid #3498db;
+}
+
+.balance-result p {
+  margin: 8px 0;
+  font-size: 1.05rem;
+  color: #2c3e50;
+}
+
+.balance-result strong {
+  color: #34495e;
+  font-weight: 600;
+}
+
+/* Transactions Table */
+.transactions-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+table thead {
+  background-color: #34495e;
+  color: white;
+}
+
+table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Transaction Type Badges */
+.type {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.type.transfer {
+  background-color: #e8f5e9;
+  color: #27ae60;
+}
+
+.type.mint {
+  background-color: #e3f2fd;
+  color: #2980b9;
+}
+
+.type.burn {
+  background-color: #fff3e0;
+  color: #e67e22;
+}
+
+/* Address Style */
+.address {
+  font-family: 'Courier New', monospace;
+  color: #8e44ad;
+  font-weight: 500;
+}
+
+/* Status Badge */
+.status {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.status.success {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
+
+.status.pending {
+  background-color: #fff9c4;
+  color: #f57f17;
+}
+
+.status.failed {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .token-ledger-container {
+    padding: 15px 10px;
+  }
+
+  .token-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .section,
+  .contract-info-section {
+    padding: 20px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .info-item {
+    padding: 12px;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .token-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section h2,
+  .contract-info-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .section,
+  .contract-info-section {
+    padding: 15px;
+  }
+
+  .form-control {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 10px 15px;
+  }
+}
